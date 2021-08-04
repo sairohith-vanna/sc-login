@@ -1,0 +1,8 @@
+<form (ngSubmit)="submitForAuthentication()">
+  <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username">
+  <br />
+  <input type="password" class="form-control" id="password" required [(ngModel)]="user.password" name="password">
+  <br />
+  <input type="submit" value="login">
+</form>
+<p>CSRF Token: {{ csrfToken }}</p>
